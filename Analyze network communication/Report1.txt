@@ -1,1 +1,8 @@
+Provide a summary of the problem found in the DNS and ICMP traffic log:
+    The network protocol analyzer determines that port 53 is unreachable when attempting to receive a response from the server. Port 53 is       usually used for communication with DNS servers. The root cause is probably because the response takes too long.
+
+Explain your analysis of the data and provide one solution to implement:
+    The incident occurred earlier this afternoon when several customers reported
+    that they could not reach the website. The network security team
+    responded and began running tests with the network protocol analyzer tool tcpdump. The resulting logs revealed that port 53, which is        used for DNS traffic, is not reachable. We are continuing to investigate the root cause of the issue to determine how we can restore         access to the secure website. The security team suspects that we need to implement a DNS  cache.
 
