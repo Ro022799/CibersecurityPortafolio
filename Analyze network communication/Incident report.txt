@@ -1,0 +1,14 @@
+1. Identify the type of attack that may have caused this network interruption
+Reviewing the Wireshark log, the security team identifies an external IP (203.0.113.0) sending too many 
+requests to the website server, causing a Zero Window problem. The security team also ensured that there 
+were no other external IP contributing with the attack. The security team concluded that it consisted of a DoS attack.
+
+2.Explain how the attack is causing the website to malfunction:
+Due the server is receiving too many requests, it cannot process them all, this causes it to have an overload, 
+so its response time takes too long, causing the following messages, the first one to the client: HTTP/1.1 504 Gateway Time-out (text/html) 
+error message and the second message in the log file: [RST,ACK].
+As its name reflects, this type of attack blocks clients from establishing a connection to the server, so the consequences can affect 
+production time. The security team proposes to configure the server's firewall to accept only requests from the local area, and not external ones.
+
+
+
