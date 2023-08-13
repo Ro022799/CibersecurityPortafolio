@@ -32,9 +32,7 @@ response to the detection of unusual network traffic patterns through thorough a
 ability to swiftly and effectively respond to potential security breaches.
 
 5. Recover
-Following the successful containment of the attack, the server underwent a reset. The security team will undertake a comprehensive review of 
-the backup file to ensure the integrity of data was not compromised. Additionally, the staff will be informed that any requests made prior to
-the incident were not logged or recorded. This proactive approach reinforces data security and transparency within the organization.
+Following the successful containment of the attack, the server underwent a reset. The security team will undertake a comprehensive review of  the backup file to ensure the integrity of data was not compromised. Additionally, the staff will be informed that any requests made prior to the incident were not logged or recorded. This proactive approach reinforces data security and transparency within the organization. In the future, external ICMP flood attacks can be blocked at the firewall.
 
 
 
