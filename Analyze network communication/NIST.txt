@@ -1,0 +1,43 @@
+  Summary
+A DDos attack was perpetuated, causing network resources start to failed, analyzing the network traffic log, 
+the security team realize a malicious actor had sent a flood of ICMP pings into the company’s network through 
+an unconfigured firewall
+
+1. Identify
+The incident management team conducted an audit of the systems, devices, and access policies implicated in the attack
+to pinpoint security gaps. After analyzing network traffic, the security team reached a conclusion: a significant volume 
+of ICMP data packets inundated the network. This surge in traffic was attributed to an unconfigured firewall, which ultimately 
+allowed a threat actor to gain unauthorized access to the network.
+
+2. Protect
+The team implemented actions to prevent attacks on the near futurue, in complaince with the playbook provisioned by the security team, 
+the next measueres were taken:
+  A new firewall rule to limit the rate of incoming ICMP packets
+  Source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets
+  Network monitoring software to detect abnormal traffic patterns
+  An IDS/IPS system to filter out some ICMP traffic based on suspicious characteristics
+
+3. Detect
+The team proactively executed measures to thwart future attacks, aligning with the security team's prescribed playbook.
+The following strategic actions were undertaken:
+  Enactment of a novel firewall rule designed to curtail the influx of incoming ICMP packets, thereby constraining their rate.
+  Implementation of source IP address authentication within the firewall infrastructure to meticulously scrutinize incoming ICMP packets for potential spoofed IP addresses.
+  Deployment of sophisticated network monitoring software, instrumental in promptly identifying any anomalous traffic patterns that may arise.
+  Integration of an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS), imparting the capability to selectively filter out ICMP traffic exhibiting suspicious attributes.
+
+4. Response
+The team initiated the establishment of a comprehensive firewall configuration registry. Alterations to firewall settings were enacted 
+to proactively counteract IP spoofing. Additionally, a safeguard mechanism was implemented to automatically initiate server shutdown in 
+response to the detection of unusual network traffic patterns through thorough analysis. These actions collectively enhance the organization's
+ability to swiftly and effectively respond to potential security breaches.
+
+5. Recover
+Following the successful containment of the attack, the server underwent a reset. The security team will undertake a comprehensive review of 
+the backup file to ensure the integrity of data was not compromised. Additionally, the staff will be informed that any requests made prior to
+the incident were not logged or recorded. This proactive approach reinforces data security and transparency within the organization.
+
+
+
+
+
+
